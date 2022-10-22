@@ -1,0 +1,17 @@
+.container{
+   display: flex; 
+   justify-content: space-between;
+   margin-top:70px ;
+   
+}
+.headding{
+    font-size:16 px ;
+    font-weight: 500px;
+}
+.column{
+  width: 25%;
+}
+.icons{
+display: flex;
+gap: 20px   ;
+}
