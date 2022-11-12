@@ -2,6 +2,7 @@ import React from 'react'
 // import { useState,useEffect } from 'react'
 import { useEffect,useState } from 'react'
 import axios from "axios"
+import "./Data.css"
 
 const Data = () => {
   const [array,setarray]=useState([])
@@ -20,19 +21,18 @@ setarray(response.data)
 <pre>{JSON.stringify(array)}</pre>
 <table>
   <thead>
-    <tr>
-      <th>Id</th>
-      <td>Title</td>
-      <td>Photo</td>
-    </tr>
+    
   </thead>
   <tbody>
     {
       array.map((item,index)=>{
-        return <tr>
-          <td>{item.id}</td>
-          <td>{item.title}</td>
-          <td><img src={item.thumbnailUrl} alt="" /></td>
+        return <tr className='main'>
+          <div className="card">
+            {/* <div className="card-header"><img src={item.thumbnailUrl}alt="" /></div> */}
+            <span><img src={item.thumbnailUrl}alt="" /></span>
+            <div className="card-body"></div>
+          </div>
+          
         </tr>
       })
     }

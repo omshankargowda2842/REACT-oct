@@ -43,8 +43,8 @@ const Footer = () => {
             }
                      ]
   return (
-   
-     <div className="container">
+   <div>
+     <div className="contain">
       {
         heading.map((items)=>{
           return <div className='column '>
@@ -67,7 +67,9 @@ const Footer = () => {
           </div>
         })
       }
-     
+      
+      </div>
+     <center> <p >Copyright ©2022 All rights reserved | This template is made with  by Colorlib</p></center>
      
     </div>
   )
