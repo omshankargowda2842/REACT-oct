@@ -1,16 +1,20 @@
-import React from 'react'
-import { useState } from 'react'
-import {uesState} from "react"
+import { useState, useEffect } from 'react';
 
-const Countdown = () => {
-    const [time,Settime]=useState(8)
+ function Countdown() {
+  const [counter, setCounter] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCounter((prevCounter) => prevCounter + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-
-    <div>
-        {time}
-      
+    <div className="App">
+      <h1>Counter: {counter}</h1>
     </div>
-  )
+  );
 }
-
 export default Countdown
