@@ -16,7 +16,15 @@ const App1 = () => {
                                },
                                {
                                 Name:"chandu"
+                               },
+                               {
+                                Name:"chaitanya ji"
+                               },
+                               {
+                                Name:"santosh jo"
                                }
+
+
 
                                 ])
   return (

@@ -58,7 +58,7 @@ const Form = () => {
         <div className='row'>
   <div className='col col-md-5'>
   <pre>{JSON.stringify(formvalues)}</pre>
-        <form onSubmit={submithandler}>
+        <form autoComplete='off' onSubmit={submithandler}>
             <div className='form-group'>
             <input type="text"  className='form-control'  name='name' placeholder='name' value={formvalues.name} onChange={updatehandler} style={{"margin-top":"10px"}}/>
             <p className='text-danger'>{formerrors.name}</p>

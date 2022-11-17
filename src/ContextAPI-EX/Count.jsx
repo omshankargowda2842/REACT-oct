@@ -6,6 +6,7 @@ const Count = () => {
     const [data,Setdata]=useContext(store)
   return (
     <div>
+      {Setdata}
       Count:{data.length}
     </div>
   )
