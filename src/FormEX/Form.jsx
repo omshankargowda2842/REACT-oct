@@ -16,18 +16,19 @@ const Form = () => {
     }
    
     const submithandler=(e)=>{
-        SetFormvalues("")
+        // SetFormvalues("")
     e.preventDefault()
-    e.target.reset()
+    // e.target.reset()
     console.log(formvalues)
     setFormerrors(validate(formvalues))
     setIssubmit(true)
-    const newstore=[...store,formvalues]
-    setStore(newstore)
+    
     }
 
     useEffect( ()=>{
     if(Object.keys(formerrors).length===0 && issubmit){
+        const newstore=[...store,formvalues]
+    setStore(newstore)
     console.log(formerrors);
     }
     },[])
