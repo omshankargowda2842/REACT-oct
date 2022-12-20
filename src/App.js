@@ -11,15 +11,25 @@
 // import Countdown from './Timeout/Countdown'
 // import Time from './Timeout/Time'
 // import Form from './FormEX/Form'
-
-import Filter from "./Search-Filter/Array/Filter"
+// import Cart from './Cart'
+// import Home from'./Home'
+// import{CartProvider } from'react-use-cart'
+// import Footer from "./karthikbro/Footer"
+ import About from "./About"
+// import Filter from "./Search-Filter/Array/Filter"
 
 
 const App = () => {
  
   return (
     <div>
-      <Filter/>
+      <About/>
+      {/* <Footer/> */}
+       {/* <CartProvider>
+     <Home/>
+     <Cart/>
+     </CartProvider> */}
+      {/* <Filter/> */}
       {/* <Search/> */}
       {/* <Time/> */}
       {/* <Countdown/> */}
